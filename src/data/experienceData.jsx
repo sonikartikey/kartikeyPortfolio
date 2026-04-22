@@ -2,7 +2,7 @@ export const experienceData = [
     {
         id: 1,
         company: 'GnapiTech',
-        jobtitle: 'Full-Stack Developer',
+        jobtitle: 'Full Stack GIS Engineer | Spatial Systems | Network & Utility GIS',
         startYear: '2023',
         endYear: 'Present'
     },

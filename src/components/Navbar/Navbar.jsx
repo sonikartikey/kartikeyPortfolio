@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-awesome-reveal';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
@@ -177,7 +177,7 @@ function Navbar() {
 
                 <div onClick={handleDrawerClose}>
                     <div className='navLink--container'>
-                        <Fade left>
+                        <Fade direction="left" triggerOnce>
                             <NavLink
                                 to='/'
                                 smooth={true}
@@ -195,7 +195,7 @@ function Navbar() {
                             </NavLink>
                         </Fade>
 
-                        <Fade left>
+                        <Fade direction="left" triggerOnce>
                             <NavLink
                                 to='/#about'
                                 smooth={true}
@@ -212,7 +212,7 @@ function Navbar() {
                         </Fade>
 
 
-                        <Fade left>
+                        <Fade direction="left" triggerOnce>
                             <NavLink
                                 to='/#experience'
                                 smooth={true}
@@ -248,7 +248,7 @@ function Navbar() {
                             </NavLink>
                         </Fade> */}
 
-                        <Fade left>
+                        <Fade direction="left" triggerOnce>
                             <NavLink
                                 to='/#contacts'
                                 smooth={true}

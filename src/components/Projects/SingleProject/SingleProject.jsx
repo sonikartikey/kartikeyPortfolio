@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
@@ -35,7 +35,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
     const classes = useStyles();
 
     return (
-        <Fade bottom>
+        <Fade direction="up" triggerOnce>
             <div
                 key={id}
                 className='singleProject'
@@ -55,16 +55,10 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                             target='_blank'
                             rel='noreferrer'
                             className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-demo`}
+                            aria-labelledby={`${name.replace(' ', '-').toLowerCase()} ${name.replace(' ', '-').toLowerCase()}-demo`}
                         >
                             <FaPlay
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-demo`}
+                                id={`${name.replace(' ', '-').toLowerCase()}-demo`}
                                 className={classes.icon}
                                 aria-label='Demo'
                             />
@@ -74,16 +68,10 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                             target='_blank'
                             rel='noreferrer'
                             className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-code`}
+                            aria-labelledby={`${name.replace(' ', '-').toLowerCase()} ${name.replace(' ', '-').toLowerCase()}-code`}
                         >
                             <FaCode
-                                id={`${name
-                                    .replace(' ', '-')
-                                    .toLowerCase()}-code`}
+                                id={`${name.replace(' ', '-').toLowerCase()}-code`}
                                 className={classes.icon}
                                 aria-label='Code'
                             />
